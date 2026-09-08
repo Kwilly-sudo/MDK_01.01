@@ -92,3 +92,138 @@ int main()
 			break;
 	}
 }
+
+
+
+
+
+
+
+
+
+#include <iostream>
+using std::cout;
+using std::cin;
+
+void task1()
+{
+	cout << "C++ is a general-purpose programming language with a bias towards systems programming that\n";
+	cout << "	is a better C\n";
+	cout << "	supports data abstraction\n";
+	cout << "	supports object-oriented programming\n";
+	cout << "	supports generic programming\n";
+};
+void task2()
+{
+	int num1;
+	int num2;
+	cout << "enter num1: \n";
+	cin >> num1;
+	cout << "enter num2: \n";
+	cin >> num2;
+	cout << "Summa: " << (num1 + num2) << "\n";
+};
+void task3()
+{
+	double cen;
+	cout << "enter num1: ";
+	cin >> cen;
+	cout << "inch" << (cen * 2.54)<< "\n";
+};
+void task4()
+{
+	long long n; 
+	cout << "enter num: ";
+	cin >> n; 
+	cout << n * (n + 1) / 2 << "\n";
+};
+void task5()
+{
+	int x1, y1, x2, y2;
+	cin >> x1 >> y1 >> x2 >> y2;
+	double a = (x1 - x2 == y1 - y2) || (x1 - x2 == -(y1 - y2));
+
+	if (x1 == x2 || y1 == y2 || a) 
+	{
+		cout << "YES\n";
+	}
+	else {
+		cout << "NO\n";
+	}
+};
+void task6()
+{
+	int sides[3];
+
+	cin >> sides[0] >> sides[1] >> sides[2];
+
+	sort(sides, sides + 3);
+
+	int a = sides[0];  
+	int b = sides[1];  
+	int c = sides[2];  
+	if (c > a || c > b)
+	{
+		int d;
+		d = (a * a) + (b * b);
+	}
+};
+void task7()
+{
+
+};
+void task8()
+{
+
+};
+void task9()
+{
+
+};
+int main()
+{
+	int a;
+	cout << "Select a program (1-6): ";
+	cin >> a;
+
+	if (a == 1)
+	{
+		task1();
+	}
+	else if (a == 2)
+	{
+		task2();
+	}
+	else if (a == 3)
+	{
+		task3();
+	}
+	else if (a == 4)
+	{
+		task4();
+	}
+	else if (a == 5)
+	{
+		task5();
+	}
+	else if (a == 6)
+	{
+		task6();
+	}
+	else if (a == 7)
+	{
+		task7();
+	}
+	else if (a == 8)
+	{
+		task8();
+	}
+	else if (a == 9)
+	{
+		task9();
+	}
+	else
+	{
+		cout << "error";
+	};
+};
